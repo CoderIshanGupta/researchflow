@@ -1,0 +1,39 @@
+# FastAPI
+fastapi==0.109.0
+uvicorn[standard]==0.27.0
+python-multipart==0.0.6
+python-dotenv==1.0.0
+
+# Database - UPDATED VERSION
+psycopg[binary]==3.3.3
+sqlalchemy==2.0.25
+alembic==1.13.1
+
+# Supabase
+supabase==2.3.4
+
+# AI - Groq only
+groq==0.4.1
+
+# LangChain - minimal
+langchain-core==0.1.52
+langchain-groq
+
+# PDF Processing
+pypdf2==3.0.1
+pdfplumber==0.10.3
+
+# Auth
+python-jose[cryptography]==3.3.0
+
+# Utilities
+pydantic>=2.0.0
+pydantic-settings>=2.0.0
+tenacity==8.2.3
+
+# Citation
+bibtexparser==1.4.1
+
+# Testing
+pytest==7.4.4
+pytest-asyncio==0.23.3
