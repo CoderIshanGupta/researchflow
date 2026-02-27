@@ -1350,7 +1350,7 @@ export default function SessionDetailPage() {
                               ? 'Citations'
                               : 'Keyword hits',
                         angle: -90,
-                        position: 'ycenter',
+                        position: 'center',
                         style: { fontSize: 13 },
                       }}
                     />
