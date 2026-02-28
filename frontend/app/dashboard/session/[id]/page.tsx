@@ -613,8 +613,8 @@ export default function SessionDetailPage() {
         animate={{ opacity: 1, y: 0 }}
         onClick={() => setSelectedPaper(paper)}
         className={`p-4 border rounded-lg transition-colors cursor-pointer ${isAdded && !showAddButton
-            ? 'border-green-200 bg-green-50/30'
-            : 'border-gray-200 hover:border-teal-300'
+          ? 'border-green-200 bg-green-50/30'
+          : 'border-gray-200 hover:border-teal-300'
           }`}
       >
         <div className="flex items-start justify-between gap-3">
@@ -681,10 +681,10 @@ export default function SessionDetailPage() {
                 }}
                 disabled={isAdded || isAdding}
                 className={`p-2 rounded-lg transition-all ${isAdded
-                    ? 'bg-green-100 text-green-600'
-                    : isAdding
-                      ? 'bg-gray-100 text-gray-400'
-                      : 'bg-teal-50 text-teal-600 hover:bg-teal-100'
+                  ? 'bg-green-100 text-green-600'
+                  : isAdding
+                    ? 'bg-gray-100 text-gray-400'
+                    : 'bg-teal-50 text-teal-600 hover:bg-teal-100'
                   }`}
               >
                 {isAdding ? (
@@ -885,8 +885,8 @@ export default function SessionDetailPage() {
         <button
           onClick={() => setActiveTab('sources')}
           className={`flex-1 sm:flex-none flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${activeTab === 'sources'
-              ? 'bg-white text-teal-600 shadow-sm'
-              : 'text-gray-600'
+            ? 'bg-white text-teal-600 shadow-sm'
+            : 'text-gray-600'
             }`}
         >
           <FiSearch className="w-4 h-4" />
@@ -900,8 +900,8 @@ export default function SessionDetailPage() {
         <button
           onClick={() => setActiveTab('chat')}
           className={`flex-1 sm:flex-none flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${activeTab === 'chat'
-              ? 'bg-white text-teal-600 shadow-sm'
-              : 'text-gray-600'
+            ? 'bg-white text-teal-600 shadow-sm'
+            : 'text-gray-600'
             }`}
         >
           <FiMessageSquare className="w-4 h-4" />
@@ -910,8 +910,8 @@ export default function SessionDetailPage() {
         <button
           onClick={() => setActiveTab('draft')}
           className={`flex-1 sm:flex-none flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${activeTab === 'draft'
-              ? 'bg-white text-teal-600 shadow-sm'
-              : 'text-gray-600'
+            ? 'bg-white text-teal-600 shadow-sm'
+            : 'text-gray-600'
             }`}
         >
           <FiFileText className="w-4 h-4" />
@@ -920,8 +920,8 @@ export default function SessionDetailPage() {
         <button
           onClick={() => setActiveTab('metrics')}
           className={`flex-1 sm:flex-none flex items-center justify-center gap-1 sm:gap-2 px-2 sm:px-4 py-2 sm:py-2.5 rounded-lg text-xs sm:text-sm font-medium transition-all ${activeTab === 'metrics'
-              ? 'bg-white text-teal-600 shadow-sm'
-              : 'text-gray-600'
+            ? 'bg-white text-teal-600 shadow-sm'
+            : 'text-gray-600'
             }`}
         >
           <FiShare2 className="w-4 h-4" />
@@ -1171,8 +1171,8 @@ export default function SessionDetailPage() {
                 <div
                   key={idx}
                   className={`max-w-[80%] rounded-lg px-3 py-2 text-sm whitespace-pre-wrap ${m.role === 'user'
-                      ? 'ml-auto bg-teal-600 text-white'
-                      : 'mr-auto bg-white border border-gray-200 text-gray-900'
+                    ? 'ml-auto bg-teal-600 text-white'
+                    : 'mr-auto bg-white border border-gray-200 text-gray-900'
                     }`}
                 >
                   {m.content}
@@ -1270,7 +1270,22 @@ export default function SessionDetailPage() {
                     ? 'Add some sources first, then generate a draft.'
                     : 'Click "Generate Draft" to create a structured summary or literature review.\nYou can edit the draft here.'
                 }
-                className="w-full h-full border border-gray-300 rounded-lg p-3 text-sm font-mono resize-none focus:ring-2 focus:ring-teal-500 focus:border-transparent outline-none"
+                className="
+                  w-full
+                  min-h-[420px]
+                  sm:min-h-[520px]
+                  border
+                  border-gray-300
+                  rounded-lg
+                  p-3
+                  text-sm
+                  font-mono
+                  resize-none
+                  focus:ring-2
+                  focus:ring-teal-500
+                  focus:border-transparent
+                  outline-none
+                  "
               />
             </div>
           </div>
